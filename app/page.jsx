@@ -10,6 +10,7 @@ import Typed from "typed.js";
 import Header from "@/components/structure/Header"
 import Main from "@/components/structure/Main"
 import Footer from "@/components/structure/Footer";
+import Footer2 from "@/components/structure/Footer2"
 
 // Icons
 import { FaArrowDown } from "react-icons/fa6";
@@ -58,7 +59,7 @@ export default function Home() {
           </FaArrowDown>
         </motion.div>
       </div>
-      <Footer></Footer>
+      <Footer2></Footer2>
     </Main>
   )
 }

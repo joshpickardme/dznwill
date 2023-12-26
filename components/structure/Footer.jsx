@@ -18,13 +18,13 @@ import { IoMail } from "react-icons/io5";
 
 export default function Footer() {
         return (
-            <div className="flex min-h-[165px] flex-col md:flex-row gap-8 bg-[var(--turquoise)] p-10 -ml-6 -mr-6 md:-mr-16 md:-ml-16">
-                <div className="flex justify-center items-center md:justify-end md:mr-16">
-                    <Image src="/logo_white.png" className="w-[120px] h-[120px] md:w-[86px] md:h-[86px] md:max-w-[86px] md:max-h-[86px] md:min-w-[86px] md:max-h-[86px]" width={120} height={120}></Image>
+            <div className="flex min-h-[165px] w-screen flex-col md:flex-row bg-[var(--turquoise)] p-10 -ml-6 -mr-6 md:-mr-16 md:-ml-16">
+                <div className="flex justify-center items-center md:justify-end">
+                    <Image src="/logo_white.png" className="w-[120px] h-[120px] md:w-[86px] md:h-[86px] md:max-w-[86px] md:max-h-[86px] md:min-w-[86px]" width={120} height={120}></Image>
                 </div>
-                <div className="flex flex-col md:flex-row gap-8 items-center w-full">
-                    <hr className="border-2 rotate-90 w-[118px] hidden md:flex rounded-sm" />
-                    <div className="flex flex-col md:flex-row gap-12 items-center justify-between">
+                <div className="flex flex-col md:flex-row items-center justify-end min-w-full">
+                    <hr className="border-2 rotate-90 w-[90px] divide-x-2 rounded-md hidden md:flex" />
+                    <div className="flex flex-col md:flex-row gap-12 justify-end w-fullu">
                         <div className="flex flex-col md:flex-row gap-6 items-center">
                             <FooterButton text={'home'} link={'/'}></FooterButton>
                             <FooterButton text={'about'} link={'/about'}></FooterButton>

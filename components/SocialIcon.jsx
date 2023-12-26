@@ -1,7 +1,9 @@
-export default function SocialIcon({icon}) {
+import Link from "next/link"
+
+export default function SocialIcon({icon, link}) {
     return (
-        <div className="bg-white cursor-pointer rounded-lg flex items-center justify-center w-[50px] h-[50px] min-w-[50px] min-h-[50px] max-w-[50px] max-h-[50px]">
+        <a href={link} target="_blank" rel="noopener noreferrer" className="bg-white cursor-pointer rounded-lg flex items-center justify-center w-[50px] h-[50px] md:w-[65px] md:h-[65px] md:min-w-[65px] md:min-h-[65px] md:max-w-[65px] md:max-h-[65px]">
             {icon}
-        </div>
+        </a>
     )
 }
