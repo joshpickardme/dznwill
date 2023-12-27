@@ -5,13 +5,18 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 // Imports
 import Image from "next/image"
+import { useState } from "react";
 
 // Components
 import NavButton from "../NavButton"
 import useScreenSize from "@/lib/UseScreenSize";
+import Hamburger from "../Hamburger";
+
+
 
 export default function Header() {
     const screenSize = useScreenSize();
+    const [navActive, setNavActive] = useState(false)
 
     // Mobile
     if(screenSize.width < 768) {
@@ -19,7 +24,7 @@ export default function Header() {
             <header className="flex flex-row justify-between items-center z-10">
                 <Image src="/logo.png" width={90} height={90}></Image>
                 <div className="flex flex-row gap-14 items-center">
-                    <RxHamburgerMenu className="scale-[2] hover:cursor-pointer"></RxHamburgerMenu>
+                    <Hamburger navActive={navActive} setNavActive={setNavActive}></Hamburger>
                 </div>
             </header>
         )
