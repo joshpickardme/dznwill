@@ -38,7 +38,7 @@ export default function Footer() {
                     
                 </div>
             </div>
-            <div className="hidden lg:flex bg-black justify-center w-[200px]">
+            <div className="hidden lg:flex bg-black w-[200px]">
                 <Label></Label>
             </div>
             <div className="hidden md:flex flex-col lg:hidden justify-center">

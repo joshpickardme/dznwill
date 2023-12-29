@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <Main>
       <Header></Header>
-      <div className="flex min-h-screen justify-center items-center -mt-20 z-0 ">
+      <div className="flex min-h-screen justify-center -mt-[105px] items-center z-0 ">
         <h2 className="font-medium text-2xl md:text-4xl md:max-w-[680px] text-center md:leading-normal leading-normal">Good Morning! I'm <span className="font-semibold text-[var(--turquoise)]">Will</span> a <br/> freelance creative with unique <br/> skills in <motion.span className="font-semibold text-[var(--red)]">{skill}</motion.span>. </h2>
         <motion.div animate={{y: [0, 15, 0]}} transition={{duration: 2, ease: "easeInOut", repeat: Infinity}} className="absolute bottom-28"><FaArrowDown className="scale-[2]">
           </FaArrowDown>
