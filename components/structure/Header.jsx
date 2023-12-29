@@ -62,7 +62,7 @@ export default function Header() {
                 <Hamburger navActive={navActive} setNavActive={toggleNav}></Hamburger>
             </div>
             {navActive && 
-            <div className="fixed min-h-screen md:hidden min-w-full bg-black opacity-90 z-0 top-0 left-0 ">
+            <motion.div initial={{opacity: 0}} animate={{opacity: 0.9}} transition={{duration: 0.1}} className="fixed min-h-screen md:hidden min-w-full bg-black z-0 top-0 left-0 ">
                 <div className="flex pl-6 pr-6 pt-40 min-w-full min-h-screen">
                     <div className="flex flex-col gap-3">
                         <motion.span initial={{x: -120}} animate={{x: 0}} transition={{delay: 0}}><NavButton mobile={true} text={'home'} link={"/"}></NavButton></motion.span>
@@ -71,7 +71,7 @@ export default function Header() {
                         <motion.span initial={{x: -120}} animate={{x: 0}} transition={{delay: 0.3}}><NavButton mobile={true} text={'contact'} link={"/contact"}></NavButton></motion.span>
                     </div>
                 </div>
-            </div>}
+            </motion.div>}
 
         </header>
     )
