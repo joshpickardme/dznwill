@@ -50,7 +50,7 @@ export default function Header() {
     }
 
     return(
-        <header className="flex flex-row justify-between  z-10">
+        <header className="flex flex-row justify-between z-10">
             <Image className="z-10" src={navActive ? '/logo_turq.png' : '/logo.png'} width={90} height={90}></Image>
             <div className="hidden md:flex flex-row gap-8 items-center">
                 <NavButton text={"home"} link={"/"}></NavButton>

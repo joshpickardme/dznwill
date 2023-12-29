@@ -34,7 +34,7 @@ export default function Label({popup}) {
         )
     } else {
         return (
-            <div className="absolute bg-[var(--black)] w-[200px] h-[250px] -bottom-[192px] p-4 rounded-t-md">
+            <div className="absolute bg-[var(--black)] w-[200px] h-[250px] p-4 rounded-t-md">
                 <div className="flex flex-col gap-4 min-w-full min-h-full items-center">
                     <div className="flex flex-row gap-4">
                         <Socials type={'twitter'}></Socials>
